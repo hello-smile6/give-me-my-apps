@@ -23,6 +23,16 @@ powershell -c "Add-AppxPackage %TEMP%\powertoys.msix"
 echo Candy Crush
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/candy-crush.appx --ouput "%TEMP%\candy-crush.appx"
 powershell -c "Add-AppxPackage %TEMP%\candy-crush.appx"
+
+echo .NET Framework
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/dotnet-framework.appx --output "%TEMP%\dotnet-framework.appx"
+powershell -c "Add-AppxPackage %TEMP%\dotnet-framework.appx"
+echo .NET Runtime
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/dotnet-runtime.appx --output "%TEMP%\dotnet-runtime.appx"
+powershell -c "Add-AppxPackage %TEMP%\dotnet-runtime.appx"
+echo Disney+
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/disney.msix --output "%TEMP%\disney.msix"
+powershell -c "Add-AppxPackage %TEMP%\disney.msix"
 echo Themes
 echo  Pantone Color of the Year 2022
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/MicrosoftCorporationII.PantoneColoroftheYear2022_1.0.0.0_neutral__8wekyb3d8bbwe.Appx --output "%TEMP%\pantone2022.appx"
