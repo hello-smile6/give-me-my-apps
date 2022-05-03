@@ -17,3 +17,11 @@ rem https://github.com/TranslucentTB/TranslucentTB/releases/download/2021.5/winu
 echo TranslucentTB
 curl --location --progress-bar https://github.com/TranslucentTB/TranslucentTB/releases/download/2021.5/bundle.msixbundle --output "%TEMP%\translucentTB.msixbundle"
 powershell -c "Add-AppxPackage %TEMP%\translucentTB.msixbundle"
+rem +----------------------------------------+
+rem |                                        |
+rem |  THIS LINE MUST BE LAST, BIG DOWNLOAD  |
+rem |                                        |
+rem +----------------------------------------+
+echo Ubuntu
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/CanonicalGroupLimited.UbuntuonWindows_2004.2022.1.0_neutral___79rhkp1fndgsc.AppxBundle --output "%TEMP%\ubuntu.AppxBundle"
+powershell -c "Add-AppxPackage %TEMP%\ubuntu.AppxBundle"
