@@ -21,7 +21,7 @@ echo PowerToys
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/PowerToysSetup-0.15.2-x64.msix --output "%TEMP%\powertoys.msix"
 powershell -c "Add-AppxPackage %TEMP%\powertoys.msix"
 echo Candy Crush
-curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/candy-crush.appx --ouput "%TEMP%\candy-crush.appx"
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/candy-crush.appx --output "%TEMP%\candy-crush.appx"
 powershell -c "Add-AppxPackage %TEMP%\candy-crush.appx"
 
 echo .NET Framework
