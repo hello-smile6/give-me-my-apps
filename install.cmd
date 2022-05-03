@@ -17,6 +17,8 @@ rem https://github.com/TranslucentTB/TranslucentTB/releases/download/2021.5/winu
 echo TranslucentTB
 curl --location --progress-bar https://github.com/TranslucentTB/TranslucentTB/releases/download/2021.5/bundle.msixbundle --output "%TEMP%\translucentTB.msixbundle"
 powershell -c "Add-AppxPackage %TEMP%\translucentTB.msixbundle"
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/MicrosoftCorporationII.PantoneColoroftheYear2022_1.0.0.0_neutral__8wekyb3d8bbwe.Appx --output "%TEMP%\pantone2022.appx"
+powershell -c "Add-AppxPackage %TEMP%\pantone2022.appx"
 rem +----------------------------------------+
 rem |                                        |
 rem |  THIS LINE MUST BE LAST, BIG DOWNLOAD  |
