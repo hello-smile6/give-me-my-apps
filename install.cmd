@@ -34,8 +34,8 @@ echo Disney+
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/disney.msix --output "%TEMP%\disney.msix"
 powershell -c "Add-AppxPackage %TEMP%\disney.msix"
 echo Maps
-curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/maps.msix --output "%TEMP%\maps.msix"
-powershell -c "Add-AppxPackage %TEMP%\maps.msix"
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/maps.msixbundle --output "%TEMP%\maps.msixbundle"
+powershell -c "Add-AppxPackage %TEMP%\maps.msixbundle"
 echo Themes
 echo  Pantone Color of the Year 2022
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/MicrosoftCorporationII.PantoneColoroftheYear2022_1.0.0.0_neutral__8wekyb3d8bbwe.Appx --output "%TEMP%\pantone2022.appx"
