@@ -17,6 +17,9 @@ rem https://github.com/TranslucentTB/TranslucentTB/releases/download/2021.5/winu
 echo TranslucentTB
 curl --location --progress-bar https://github.com/TranslucentTB/TranslucentTB/releases/download/2021.5/bundle.msixbundle --output "%TEMP%\translucentTB.msixbundle"
 powershell -c "Add-AppxPackage %TEMP%\translucentTB.msixbundle"
+echo PowerToys
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/PowerToysSetup-0.15.2-x64.msix --output "%TEMP%\powertoys.msix"
+powershell -c "Add-AppxPackage %TEMP%\powertoys.msix"
 echo Themes
 echo  Pantone Color of the Year 2022
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/MicrosoftCorporationII.PantoneColoroftheYear2022_1.0.0.0_neutral__8wekyb3d8bbwe.Appx --output "%TEMP%\pantone2022.appx"
