@@ -13,3 +13,7 @@ powershell -c "Add-AppxPackage %TEMP%\UI.Xaml.appx"
 echo Email
 curl --location --progress-bar https://github.com/hello-smile6/give-me-win32-email/releases/download/dependencies/microsoft.windowscommunicationsapps_16005.14326.20858.0_neutral_._8wekyb3d8bbwe.appxbundle --output "%TEMP%\microsoft.windowscommunicationsapps_16005.14326.20858.0_neutral_~_8wekyb3d8bbwe.appxbundle"
 powershell -c "Add-AppxPackage %TEMP%\microsoft.windowscommunicationsapps_16005.14326.20858.0_neutral_~_8wekyb3d8bbwe.appxbundle"
+rem https://github.com/TranslucentTB/TranslucentTB/releases/download/2021.5/winui-x64.appx
+echo TranslucentTB
+curl --location --progress-bar https://github.com/TranslucentTB/TranslucentTB/releases/download/2021.5/bundle.msixbundle --output "%TEMP%\translucentTB.msixbundle"
+powershell -c "Add-AppxPackage %TEMP%\translucentTB.msixbundle"
