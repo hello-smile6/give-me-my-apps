@@ -20,6 +20,9 @@ powershell -c "Add-AppxPackage %TEMP%\translucentTB.msixbundle"
 echo PowerToys
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/PowerToysSetup-0.15.2-x64.msix --output "%TEMP%\powertoys.msix"
 powershell -c "Add-AppxPackage %TEMP%\powertoys.msix"
+echo Candy Crush
+curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/candy-crush.appx --ouput "%TEMP%\candy-crush.appx"
+powershell -c "Add-AppxPackage %TEMP%\candy-crush.appx"
 echo Themes
 echo  Pantone Color of the Year 2022
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/MicrosoftCorporationII.PantoneColoroftheYear2022_1.0.0.0_neutral__8wekyb3d8bbwe.Appx --output "%TEMP%\pantone2022.appx"
@@ -32,3 +35,4 @@ rem +----------------------------------------+
 echo Ubuntu
 curl --location --progress-bar https://github.com/hello-smile6/give-me-my-apps/releases/download/dependencies/CanonicalGroupLimited.UbuntuonWindows_2004.2022.1.0_neutral___79rhkp1fndgsc.AppxBundle --output "%TEMP%\ubuntu.AppxBundle"
 powershell -c "Add-AppxPackage %TEMP%\ubuntu.AppxBundle"
+del /f "%TEMP%\ubuntu.AppxBundle"
